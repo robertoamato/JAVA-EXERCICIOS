@@ -2,25 +2,25 @@ public class Main {
     public static void main(String[] args) {
         //variaveis tipos
 
-       //int idade = 41;
-       //int salario= 4000;
+        //int idade = 41;
+        //int salario= 4000;
 
-    // variaveis dentro do escopo local
-        var nome="roberto";
+        // variaveis dentro do escopo local
+        var nome = "roberto";
 
 
-       // Variaveis do tipo primitives que sao 8 tipos 4 sao usados para inteiros byte, short, int, long
-     byte aniversario=26;
+        // Variaveis do tipo primitives que sao 8 tipos 4 sao usados para inteiros byte, short, int, long
+        byte aniversario = 26;
 
-       //booleanos servem pra amarzenar true ou false
+        //booleanos servem pra amarzenar true ou false
 
-     boolean brasil=true;
+        boolean brasil = true;
 
-      // char serve para armazenar 1 caractere por vez.
+        // char serve para armazenar 1 caractere por vez.
 
-     char letra='a';
+        char letra = 'a';
 
-      // tipo primitivo float e double
+        // tipo primitivo float e double
         // float: Usado quando você precisa de números com casas decimais, mas não necessita de muita precisão e quer economizar memória.
         // double: Usado quando a precisão é importante e você precisa de mais casas decimais.
         // Declarando uma variável do tipo float.
@@ -49,15 +49,31 @@ public class Main {
 
         //exemplo de como declarar uma condicional usando o if e o else
 
-        int idade = 18;  // Declaramos uma variável inteira chamada 'idade' e atribuímos o valor 18 a ela.
+        int idade = 18;
 
-        // Verificando se a idade é maior ou igual a 18.
-        if (idade >= 17) {
-            // Se a condição for verdadeira (idade maior ou igual a 18), o código abaixo será executado.
-            System.out.println("Você é maior de idade.");
+        if (idade < 18) {
+            System.out.println("voce é de menor");
         } else {
-            // Se a condição for falsa (idade menor que 18), esta parte será executada.
-            System.out.println("Você é menor de idade.");
+            System.out.println("voce é de maior");
+
+
         }
+        // Declaração e inicialização de um vetor de inteiros com 5 posições
+        int[] numeros = new int[5];
+
+        // Atribuição de valores às posições do vetor
+        numeros[0] = 10;  // Primeira posição, índice 0
+        numeros[1] = 20;  // Segunda posição, índice 1
+        numeros[2] = 30;  // Terceira posição, índice 2
+        numeros[3] = 40;  // Quarta posição, índice 3
+        numeros[4] = 50;  // Quinta posição, índice 4
+
+        // Percorrendo o vetor e imprimindo os valores armazenados
+        for (int i = 0; i < numeros.length; i++) {
+            // Acessa o valor do vetor na posição i e imprime
+            System.out.println("Valor na posição " + i + ": " + numeros[i]);
+
+        }
+
     }
 }
