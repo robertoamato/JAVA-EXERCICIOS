@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         //variaveis tipos
 
-       int idade = 41;
-       int salario= 4000;
+       //int idade = 41;
+       //int salario= 4000;
 
     // variaveis dentro do escopo local
         var nome="roberto";
@@ -24,7 +24,7 @@ public class Main {
         // float: Usado quando você precisa de números com casas decimais, mas não necessita de muita precisão e quer economizar memória.
         // double: Usado quando a precisão é importante e você precisa de mais casas decimais.
         // Declarando uma variável do tipo float.
-        
+
         // O 'f' no final é obrigatório para dizer que o valor é do tipo float.
         float altura = 1.75f;
         System.out.println("Altura (float): " + altura);  // Exibe a altura com precisão simples (7 dígitos).
@@ -47,8 +47,17 @@ public class Main {
         System.out.println("PI em float: " + piFloat);  // Menos preciso
         System.out.println("PI em double: " + piDouble);  // Mais preciso
 
+        //exemplo de como declarar uma condicional usando o if e o else
 
+        int idade = 18;  // Declaramos uma variável inteira chamada 'idade' e atribuímos o valor 18 a ela.
 
-
+        // Verificando se a idade é maior ou igual a 18.
+        if (idade >= 17) {
+            // Se a condição for verdadeira (idade maior ou igual a 18), o código abaixo será executado.
+            System.out.println("Você é maior de idade.");
+        } else {
+            // Se a condição for falsa (idade menor que 18), esta parte será executada.
+            System.out.println("Você é menor de idade.");
+        }
     }
 }
