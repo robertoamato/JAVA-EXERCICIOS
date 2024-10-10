@@ -73,7 +73,15 @@ public class Main {
             // Acessa o valor do vetor na posição i e imprime
             System.out.println("Valor na posição " + i + ": " + numeros[i]);
 
+
         }
 
+        // Loop for simples que vai de 1 até 5
+        for (int i = 1; i <= 5; i++) {
+            // Exibe o valor atual de 'i' a cada iteração
+            System.out.println("Valor de i: " + i);
+
+        }
     }
+
 }
