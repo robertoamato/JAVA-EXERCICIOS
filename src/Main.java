@@ -82,6 +82,20 @@ public class Main {
             System.out.println("Valor de i: " + i);
 
         }
+        // Casting de um tipo inteiro (int) para um tipo double (widening)
+        int numeroInt = 10;
+        double numeroDouble = numeroInt;  // Conversão automática de int para double
+        System.out.println("Valor do int convertido para double: " + numeroDouble);
+
+        // Casting de um tipo double para int (narrowing), que requer casting explícito
+        double valorDouble = 9.78;
+        int valorInt = (int) valorDouble;  // Conversão explícita, perdendo as casas decimais
+        System.out.println("Valor do double convertido para int: " + valorInt);
+
+        // Casting de um tipo long para byte (narrowing) - Exemplo de perda de dados
+        long valorLong = 128;
+        byte valorByte = (byte) valorLong;  // Conversão explícita, pode causar perda de dados
+        System.out.println("Valor do long convertido para byte: " + valorByte);
     }
 
 }
