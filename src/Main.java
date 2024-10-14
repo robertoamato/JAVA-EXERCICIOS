@@ -54,7 +54,7 @@ public class Main {
         if (idade < 18) {
             System.out.println("voce é de menor");
         } else {
-            System.out.println("voce é de maior");
+          System.out.println("voce é de maior");
 
 
         }
@@ -96,6 +96,15 @@ public class Main {
         long valorLong = 128;
         byte valorByte = (byte) valorLong;  // Conversão explícita, pode causar perda de dados
         System.out.println("Valor do long convertido para byte: " + valorByte);
+
+        int idade1=41;
+        if(idade1 > 41){
+            System.out.println("voce é idoso");
+
+    }else{
+        System.out.println("voce é ainda é vivo");
+    }
+
     }
 
 }
