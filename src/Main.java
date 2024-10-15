@@ -108,46 +108,68 @@ import java.util.Scanner;
 //}
 import java.util.Scanner;
   // Calculadora
+//public class Main {
+ //   public static void main(String[] args) {
+
+  //      Scanner scanner = new Scanner(System.in);
+
+
+     //   System.out.println("Digite o primeiro número: ");
+     //   double numero1 = scanner.nextDouble();
+      //  System.out.println("Digite o segundo número: ");
+      //  double numero2 = scanner.nextDouble();
+
+
+      //  System.out.println("Digite o operador (+, -, *, /): ");
+      //  char operador = scanner.next().charAt(0);
+
+
+     //   double resultado;
+      //  if (operador == '+') {
+      //      resultado = numero1 + numero2;
+      //      System.out.println("Resultado: " + resultado);
+      //  } else if (operador == '-') {
+      //      resultado = numero1 - numero2;
+     //       System.out.println("Resultado: " + resultado);
+    //    } else if (operador == '*') {
+     //       resultado = numero1 * numero2;
+     //       System.out.println("Resultado: " + resultado);
+     //   } else if (operador == '/') {
+    //        if (numero2 != 0) {
+   //             resultado = numero1 / numero2;
+    //            System.out.println("Resultado: " + resultado);
+   //         } else {
+    //            System.out.println("Erro: Divisão por zero não permitida.");
+    //        }
+  //      } else {
+  //          System.out.println("Operador inválido.");
+  //      }
+
+
+   //     scanner.close();
+ //   }
+//}
+
+   //6. Verificação de Par ou Ímpar
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
+        // Criar um objeto Scanner para receber entrada do usuário
         Scanner scanner = new Scanner(System.in);
 
+        // Solicitar que o usuário insira um número inteiro
+        System.out.println("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
 
-        System.out.println("Digite o primeiro número: ");
-        double numero1 = scanner.nextDouble();
-        System.out.println("Digite o segundo número: ");
-        double numero2 = scanner.nextDouble();
-
-
-        System.out.println("Digite o operador (+, -, *, /): ");
-        char operador = scanner.next().charAt(0);
-
-
-        double resultado;
-        if (operador == '+') {
-            resultado = numero1 + numero2;
-            System.out.println("Resultado: " + resultado);
-        } else if (operador == '-') {
-            resultado = numero1 - numero2;
-            System.out.println("Resultado: " + resultado);
-        } else if (operador == '*') {
-            resultado = numero1 * numero2;
-            System.out.println("Resultado: " + resultado);
-        } else if (operador == '/') {
-            if (numero2 != 0) {
-                resultado = numero1 / numero2;
-                System.out.println("Resultado: " + resultado);
-            } else {
-                System.out.println("Erro: Divisão por zero não permitida.");
-            }
+        // Verificar se o número é par ou ímpar
+        if (numero % 2 == 0) {
+            System.out.println(numero + " é Par.");
         } else {
-            System.out.println("Operador inválido.");
+            System.out.println(numero + " é Ímpar.");
         }
 
-
+        // Fechar o scanner
         scanner.close();
     }
 }
-
-
