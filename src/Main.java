@@ -176,32 +176,69 @@ import java.util.Scanner;
   //7. Calculadora de Média
 import java.util.Scanner;
 
+//public class Main {
+  //  public static void main(String[] args) {
+
+    //    Scanner scanner = new Scanner(System.in);
+
+
+     //   System.out.println("Digite a primeira nota: ");
+     //   double nota1 = scanner.nextDouble();
+
+      //  System.out.println("Digite a segunda nota: ");
+      //  double nota2 = scanner.nextDouble();
+
+     //   System.out.println("Digite a terceira nota: ");
+    //    double nota3 = scanner.nextDouble();
+
+
+     //   double media = (nota1 + nota2 + nota3) / 3;
+
+
+     //   if (media >= 7) {
+     //       System.out.println("Aprovado com média: " + media);
+     //   } else {
+     //       System.out.println("Reprovado com média: " + media);
+     //   }
+
+
+     //   scanner.close();
+  //  }
+//}
+
+   //8. Cálculo de IMC
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite a primeira nota: ");
-        double nota1 = scanner.nextDouble();
+        System.out.println("Digite o peso em kg: ");
+        double peso = scanner.nextDouble();
 
-        System.out.println("Digite a segunda nota: ");
-        double nota2 = scanner.nextDouble();
-
-        System.out.println("Digite a terceira nota: ");
-        double nota3 = scanner.nextDouble();
+        System.out.println("Digite a altura em metros: ");
+        double altura = scanner.nextDouble();
 
 
-        double media = (nota1 + nota2 + nota3) / 3;
+        double imc = peso / (altura * altura);
 
 
-        if (media >= 7) {
-            System.out.println("Aprovado com média: " + media);
+        System.out.printf("Seu IMC é: %.2f\n", imc);
+
+
+        if (imc < 18.5) {
+            System.out.println("Você está abaixo do peso.");
+        } else if (imc >= 18.5 && imc < 24.9) {
+            System.out.println("IMC Normal.");
+        } else if (imc >= 25 && imc < 29.9) {
+            System.out.println("Você está com sobrepeso.");
         } else {
-            System.out.println("Reprovado com média: " + media);
+            System.out.println("Você está com obesidade.");
         }
 
-        
+
         scanner.close();
     }
 }
