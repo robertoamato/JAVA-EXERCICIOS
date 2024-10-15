@@ -209,33 +209,64 @@ import java.util.Scanner;
    //8. Cálculo de IMC
 import java.util.Scanner;
 
+//public class Main {
+   // public static void main(String[] args) {
+
+     //   Scanner scanner = new Scanner(System.in);
+
+
+      //  System.out.println("Digite o peso em kg: ");
+       // double peso = scanner.nextDouble();
+
+       // System.out.println("Digite a altura em metros: ");
+       // double altura = scanner.nextDouble();
+
+
+       // double imc = peso / (altura * altura);
+
+
+       // System.out.printf("Seu IMC é: %.2f\n", imc);
+
+
+      //  if (imc < 18.5) {
+      //      System.out.println("Você está abaixo do peso.");
+      //  } else if (imc >= 18.5 && imc < 24.9) {
+      //      System.out.println("IMC Normal.");
+      //  } else if (imc >= 25 && imc < 29.9) {
+      //      System.out.println("Você está com sobrepeso.");
+      //  } else {
+     //       System.out.println("Você está com obesidade.");
+     //   }
+
+
+     //   scanner.close();
+   // }
+//}
+//9. Classificação de Notas
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite o peso em kg: ");
-        double peso = scanner.nextDouble();
-
-        System.out.println("Digite a altura em metros: ");
-        double altura = scanner.nextDouble();
+        System.out.println("Digite uma nota de 0 a 100: ");
+        int nota = scanner.nextInt();
 
 
-        double imc = peso / (altura * altura);
-
-
-        System.out.printf("Seu IMC é: %.2f\n", imc);
-
-
-        if (imc < 18.5) {
-            System.out.println("Você está abaixo do peso.");
-        } else if (imc >= 18.5 && imc < 24.9) {
-            System.out.println("IMC Normal.");
-        } else if (imc >= 25 && imc < 29.9) {
-            System.out.println("Você está com sobrepeso.");
+        if (nota >= 90 && nota <= 100) {
+            System.out.println("Nota A");
+        } else if (nota >= 80 && nota < 90) {
+            System.out.println("Nota B");
+        } else if (nota >= 70 && nota < 80) {
+            System.out.println("Nota C");
+        } else if (nota >= 60 && nota < 70) {
+            System.out.println("Nota D");
+        } else if (nota >= 0 && nota < 60) {
+            System.out.println("Nota F");
         } else {
-            System.out.println("Você está com obesidade.");
+            System.out.println("Nota inválida! Por favor, insira uma nota entre 0 e 100.");
         }
 
 
