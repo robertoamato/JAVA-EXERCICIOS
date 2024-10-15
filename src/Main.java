@@ -50,10 +50,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Cria um objeto Scanner para receber entrada do usuário
+
         Scanner scanner = new Scanner(System.in);
 
-        // Solicita ao usuário que insira os três lados do triângulo
+       
         System.out.println("Digite o primeiro lado do triângulo: ");
         int lado1 = scanner.nextInt();
         System.out.println("Digite o segundo lado do triângulo: ");
@@ -61,26 +61,26 @@ public class Main {
         System.out.println("Digite o terceiro lado do triângulo: ");
         int lado3 = scanner.nextInt();
 
-        // Verifica se as medidas formam um triângulo válido
+
         if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
-            // Se todos os lados forem iguais, é equilátero
+
             if (lado1 == lado2 && lado2 == lado3) {
                 System.out.println("Triângulo Equilátero");
             }
-            // Se dois lados forem iguais, é isósceles
+
             else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
                 System.out.println("Triângulo Isósceles");
             }
-            // Se todos os lados forem diferentes, é escaleno
+
             else {
                 System.out.println("Triângulo Escaleno");
             }
         } else {
-            // Caso os lados não formem um triângulo válido
+
             System.out.println("As medidas inseridas não formam um triângulo.");
         }
 
-        // Fecha o scanner
+
         scanner.close();
     }
 }
