@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //public class Main {
   //  public static void main(String[] args) {
-       
+
     //    Scanner scanner = new Scanner(System.in);
 
 
@@ -41,43 +41,65 @@ import java.util.Scanner;
           //      System.out.println("O número é zero");
           //  }
 
-            /
+            //
          //   scanner.close();
        // }
  //   }
 
 
+        //3. Classificação de Triângulos
+//public class Main {
+   // public static void main(String[] args) {
 
+      //  Scanner scanner = new Scanner(System.in);
+
+
+       // System.out.println("Digite o primeiro lado do triângulo: ");
+       // int lado1 = scanner.nextInt();
+       // System.out.println("Digite o segundo lado do triângulo: ");
+      //  int lado2 = scanner.nextInt();
+       // System.out.println("Digite o terceiro lado do triângulo: ");
+       // int lado3 = scanner.nextInt();
+
+
+       // if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+
+          //  if (lado1 == lado2 && lado2 == lado3) {
+          //      System.out.println("Triângulo Equilátero");
+          //  }
+
+          //  else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+          //      System.out.println("Triângulo Isósceles");
+          //  }
+
+           // else {
+          //      System.out.println("Triângulo Escaleno");
+          //  }
+      //  } else {
+
+       //     System.out.println("As medidas inseridas não formam um triângulo.");
+      //  }
+
+
+     //   scanner.close();
+   // }
+//}
+import java.util.Scanner;
+        
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite o primeiro lado do triângulo: ");
-        int lado1 = scanner.nextInt();
-        System.out.println("Digite o segundo lado do triângulo: ");
-        int lado2 = scanner.nextInt();
-        System.out.println("Digite o terceiro lado do triângulo: ");
-        int lado3 = scanner.nextInt();
+        System.out.println("Digite um ano: ");
+        int ano = scanner.nextInt();
 
 
-        if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
-
-            if (lado1 == lado2 && lado2 == lado3) {
-                System.out.println("Triângulo Equilátero");
-            }
-
-            else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-                System.out.println("Triângulo Isósceles");
-            }
-
-            else {
-                System.out.println("Triângulo Escaleno");
-            }
+        if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+            System.out.println(ano + " é um ano bissexto.");
         } else {
-
-            System.out.println("As medidas inseridas não formam um triângulo.");
+            System.out.println(ano + " não é um ano bissexto.");
         }
 
 
