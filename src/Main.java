@@ -153,23 +153,55 @@ import java.util.Scanner;
    //6. Verificação de Par ou Ímpar
 import java.util.Scanner;
 
+//public class Main {
+ //   public static void main(String[] args) {
+
+     //   Scanner scanner = new Scanner(System.in);
+
+
+      //  System.out.println("Digite um número inteiro: ");
+      //  int numero = scanner.nextInt();
+
+
+       // if (numero % 2 == 0) {
+       //     System.out.println(numero + " é Par.");
+       // } else {
+       //     System.out.println(numero + " é Ímpar.");
+       // }
+
+
+        //scanner.close();
+   // }
+//}
+  //7. Calculadora de Média
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Criar um objeto Scanner para receber entrada do usuário
+
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar que o usuário insira um número inteiro
-        System.out.println("Digite um número inteiro: ");
-        int numero = scanner.nextInt();
 
-        // Verificar se o número é par ou ímpar
-        if (numero % 2 == 0) {
-            System.out.println(numero + " é Par.");
+        System.out.println("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.println("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.println("Digite a terceira nota: ");
+        double nota3 = scanner.nextDouble();
+
+
+        double media = (nota1 + nota2 + nota3) / 3;
+
+
+        if (media >= 7) {
+            System.out.println("Aprovado com média: " + media);
         } else {
-            System.out.println(numero + " é Ímpar.");
+            System.out.println("Reprovado com média: " + media);
         }
 
-        // Fechar o scanner
+        
         scanner.close();
     }
 }
