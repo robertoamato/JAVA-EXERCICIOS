@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //public class Main {
   //  public static void main(String[] args) {
-        // Cria um objeto Scanner para receber entrada do usuário
+       
     //    Scanner scanner = new Scanner(System.in);
 
 
@@ -32,7 +32,7 @@ import java.util.Scanner;
           //  System.out.println("Digite a sua idade: ");
           //  int idade = scanner.nextInt();
 
-            // Verifica se o número é positivo, negativo ou zero
+
           //  if (idade > 18) {
            //     System.out.println(idade + " voce é maior de idade");
         //    } else if (idade < 18) {
@@ -41,7 +41,7 @@ import java.util.Scanner;
           //      System.out.println("O número é zero");
           //  }
 
-            // Fecha o scanner
+            /
          //   scanner.close();
        // }
  //   }
@@ -53,7 +53,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-       
+
         System.out.println("Digite o primeiro lado do triângulo: ");
         int lado1 = scanner.nextInt();
         System.out.println("Digite o segundo lado do triângulo: ");
