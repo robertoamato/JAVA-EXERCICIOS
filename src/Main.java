@@ -276,26 +276,52 @@ import java.util.Scanner;
    // 10. Validação de Senha
 import java.util.Scanner;
 
+//public class Main {
+//    public static void main(String[] args) {
+
+//        String senhaCadastrada = "12345";
+
+
+//        Scanner scanner = new Scanner(System.in);
+
+
+//        System.out.println("Digite a senha: ");
+//        String senhaInserida = scanner.nextLine();
+
+
+//        if (senhaInserida.equals(senhaCadastrada)) {
+//            System.out.println("Senha correta.");
+//        } else {
+//            System.out.println("Senha incorreta.");
+//        }
+
+
+//        scanner.close();
+//    }
+//}
+
+//11. Verificação de Vogal ou Consoante
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
-        String senhaCadastrada = "12345";
-
-
+        // Criar um objeto Scanner para receber entrada do usuário
         Scanner scanner = new Scanner(System.in);
 
+        // Solicitar que o usuário insira uma letra
+        System.out.println("Digite uma letra: ");
+        char letra = scanner.next().toLowerCase().charAt(0); // Converte para minúscula para facilitar a comparação
 
-        System.out.println("Digite a senha: ");
-        String senhaInserida = scanner.nextLine();
-
-
-        if (senhaInserida.equals(senhaCadastrada)) {
-            System.out.println("Senha correta.");
+        // Verificar se é vogal ou consoante
+        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+            System.out.println("Vogal");
+        } else if (Character.isLetter(letra)) {
+            System.out.println("Consoante");
         } else {
-            System.out.println("Senha incorreta.");
+            System.out.println("Não é uma letra válida.");
         }
 
-        
+        // Fechar o scanner
         scanner.close();
     }
 }
