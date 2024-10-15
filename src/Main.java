@@ -85,21 +85,64 @@ import java.util.Scanner;
    // }
 //}
 import java.util.Scanner;
-        
+
+//public class Main {
+    //public static void main(String[] args) {
+
+    //    Scanner scanner = new Scanner(System.in);
+
+
+     //   System.out.println("Digite um ano: ");
+     //   int ano = scanner.nextInt();
+
+
+     //   if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+     //       System.out.println(ano + " é um ano bissexto.");
+     //   } else {
+    //        System.out.println(ano + " não é um ano bissexto.");
+    //    }
+
+
+    //    scanner.close();
+  //  }
+//}
+import java.util.Scanner;
+  // Calculadora
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite um ano: ");
-        int ano = scanner.nextInt();
+        System.out.println("Digite o primeiro número: ");
+        double numero1 = scanner.nextDouble();
+        System.out.println("Digite o segundo número: ");
+        double numero2 = scanner.nextDouble();
 
 
-        if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
-            System.out.println(ano + " é um ano bissexto.");
+        System.out.println("Digite o operador (+, -, *, /): ");
+        char operador = scanner.next().charAt(0);
+
+
+        double resultado;
+        if (operador == '+') {
+            resultado = numero1 + numero2;
+            System.out.println("Resultado: " + resultado);
+        } else if (operador == '-') {
+            resultado = numero1 - numero2;
+            System.out.println("Resultado: " + resultado);
+        } else if (operador == '*') {
+            resultado = numero1 * numero2;
+            System.out.println("Resultado: " + resultado);
+        } else if (operador == '/') {
+            if (numero2 != 0) {
+                resultado = numero1 / numero2;
+                System.out.println("Resultado: " + resultado);
+            } else {
+                System.out.println("Erro: Divisão por zero não permitida.");
+            }
         } else {
-            System.out.println(ano + " não é um ano bissexto.");
+            System.out.println("Operador inválido.");
         }
 
 
