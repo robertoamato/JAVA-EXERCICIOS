@@ -23,28 +23,66 @@ import java.util.Scanner;
     //}
 
 
-    public class Main {
-        public static void main(String[] args) {
+    //public class Main {
+      //  public static void main(String[] args) {
 
-            Scanner scanner = new Scanner(System.in);
+         //   Scanner scanner = new Scanner(System.in);
 
 
-            System.out.println("Digite a sua idade: ");
-            int idade = scanner.nextInt();
+          //  System.out.println("Digite a sua idade: ");
+          //  int idade = scanner.nextInt();
 
             // Verifica se o número é positivo, negativo ou zero
-            if (idade > 18) {
-                System.out.println(idade + " voce é maior de idade");
-            } else if (idade < 18) {
-                System.out.println(idade + " voce é menor de idade");
-            } else {
-                System.out.println("O número é zero");
-            }
+          //  if (idade > 18) {
+           //     System.out.println(idade + " voce é maior de idade");
+        //    } else if (idade < 18) {
+         //       System.out.println(idade + " voce é menor de idade");
+         //   } else {
+          //      System.out.println("O número é zero");
+          //  }
 
             // Fecha o scanner
-            scanner.close();
-        }
-    }
+         //   scanner.close();
+       // }
+ //   }
 
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Cria um objeto Scanner para receber entrada do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira os três lados do triângulo
+        System.out.println("Digite o primeiro lado do triângulo: ");
+        int lado1 = scanner.nextInt();
+        System.out.println("Digite o segundo lado do triângulo: ");
+        int lado2 = scanner.nextInt();
+        System.out.println("Digite o terceiro lado do triângulo: ");
+        int lado3 = scanner.nextInt();
+
+        // Verifica se as medidas formam um triângulo válido
+        if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1) {
+            // Se todos os lados forem iguais, é equilátero
+            if (lado1 == lado2 && lado2 == lado3) {
+                System.out.println("Triângulo Equilátero");
+            }
+            // Se dois lados forem iguais, é isósceles
+            else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                System.out.println("Triângulo Isósceles");
+            }
+            // Se todos os lados forem diferentes, é escaleno
+            else {
+                System.out.println("Triângulo Escaleno");
+            }
+        } else {
+            // Caso os lados não formem um triângulo válido
+            System.out.println("As medidas inseridas não formam um triângulo.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
 
 
