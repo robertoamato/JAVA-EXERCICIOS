@@ -303,25 +303,55 @@ import java.util.Scanner;
 //11. Verificação de Vogal ou Consoante
 import java.util.Scanner;
 
+//public class Main {
+//    public static void main(String[] args) {
+
+//        Scanner scanner = new Scanner(System.in);
+
+
+   //     System.out.println("Digite uma letra: ");
+     //   char letra = scanner.next().toLowerCase().charAt(0);
+
+
+       // if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+      //      System.out.println("Vogal");
+     //   } else if (Character.isLetter(letra)) {
+     //       System.out.println("Consoante");
+     //   } else {
+     //       System.out.println("Não é uma letra válida.");
+    //    }
+
+
+     //   scanner.close();
+//    }
+//}
+
+
+   // 12. Verificação de Número Par ou Divisível por 5
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Criar um objeto Scanner para receber entrada do usuário
+
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar que o usuário insira uma letra
-        System.out.println("Digite uma letra: ");
-        char letra = scanner.next().toLowerCase().charAt(0); // Converte para minúscula para facilitar a comparação
 
-        // Verificar se é vogal ou consoante
-        if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
-            System.out.println("Vogal");
-        } else if (Character.isLetter(letra)) {
-            System.out.println("Consoante");
+        System.out.println("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+
+        if (numero % 2 == 0 && numero % 5 == 0) {
+            System.out.println("Número Par e Divisível por 5");
+        } else if (numero % 2 == 0) {
+            System.out.println("Número Par");
+        } else if (numero % 5 == 0) {
+            System.out.println("Número Divisível por 5");
         } else {
-            System.out.println("Não é uma letra válida.");
+            System.out.println("O número não é par nem divisível por 5");
         }
 
-        // Fechar o scanner
+
         scanner.close();
     }
 }
