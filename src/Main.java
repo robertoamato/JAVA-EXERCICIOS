@@ -393,27 +393,54 @@ import java.util.Scanner;
 //14. Verificação de Horário do Dia
 import java.util.Scanner;
 
+//public class Main {
+//    public static void main(String[] args) {
+
+//        Scanner scanner = new Scanner(System.in);
+
+
+//        System.out.println("Digite a hora do dia (formato 24 horas): ");
+//        int hora = scanner.nextInt();
+
+
+//        if (hora < 0 || hora > 23) {
+//            System.out.println("Hora inválida! Insira um valor entre 0 e 23.");
+//        } else {
+
+//            if (hora >= 6 && hora < 12) {
+//                System.out.println("Manhã");
+//            } else if (hora >= 12 && hora < 18) {
+//                System.out.println("Tarde");
+//            } else {
+//                System.out.println("Noite");
+//            }
+//        }
+
+
+//        scanner.close();
+//    }
+//}
+//15. Verificação de Paridade e Divisibilidade
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite a hora do dia (formato 24 horas): ");
-        int hora = scanner.nextInt();
+        System.out.println("Digite um número: ");
+        int numero = scanner.nextInt();
 
 
-        if (hora < 0 || hora > 23) {
-            System.out.println("Hora inválida! Insira um valor entre 0 e 23.");
+        if (numero % 2 == 0 && numero % 3 == 0) {
+            System.out.println("Número Par e Divisível por 3");
+        } else if (numero % 2 == 0) {
+            System.out.println("Número Par");
+        } else if (numero % 3 == 0) {
+            System.out.println("Divisível por 3");
         } else {
-
-            if (hora >= 6 && hora < 12) {
-                System.out.println("Manhã");
-            } else if (hora >= 12 && hora < 18) {
-                System.out.println("Tarde");
-            } else {
-                System.out.println("Noite");
-            }
+            System.out.println("O número não é Par nem Divisível por 3");
         }
 
 
