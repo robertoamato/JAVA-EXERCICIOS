@@ -357,34 +357,64 @@ import java.util.Scanner;
 //}
 import java.util.Scanner;
     //13. Desconto Progressivo
+//public class Main {
+  //  public static void main(String[] args) {
+
+    //    Scanner scanner = new Scanner(System.in);
+
+
+      //  System.out.println("Digite o valor da compra: ");
+      //  double valorCompra = scanner.nextDouble();
+
+
+//        double desconto = 0;
+
+
+  //      if (valorCompra > 500) {
+    //        desconto = 0.20;  // 20% de desconto
+      //      System.out.println("Desconto aplicado: 20%");
+    //    } else if (valorCompra > 100) {
+    //        desconto = 0.10;  // 10% de desconto
+   //         System.out.println("Desconto aplicado: 10%");
+   //     } else {
+  //          System.out.println("Sem desconto aplicado.");
+  //      }
+
+
+    //    double valorFinal = valorCompra - (valorCompra * desconto);
+
+
+      //  System.out.printf("Valor final da compra: R$ %.2f\n", valorFinal);
+
+
+      //  scanner.close();
+  //  }
+//}
+//14. Verificação de Horário do Dia
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite o valor da compra: ");
-        double valorCompra = scanner.nextDouble();
+        System.out.println("Digite a hora do dia (formato 24 horas): ");
+        int hora = scanner.nextInt();
 
 
-        double desconto = 0;
-
-
-        if (valorCompra > 500) {
-            desconto = 0.20;  // 20% de desconto
-            System.out.println("Desconto aplicado: 20%");
-        } else if (valorCompra > 100) {
-            desconto = 0.10;  // 10% de desconto
-            System.out.println("Desconto aplicado: 10%");
+        if (hora < 0 || hora > 23) {
+            System.out.println("Hora inválida! Insira um valor entre 0 e 23.");
         } else {
-            System.out.println("Sem desconto aplicado.");
+
+            if (hora >= 6 && hora < 12) {
+                System.out.println("Manhã");
+            } else if (hora >= 12 && hora < 18) {
+                System.out.println("Tarde");
+            } else {
+                System.out.println("Noite");
+            }
         }
-
-
-        double valorFinal = valorCompra - (valorCompra * desconto);
-
-
-        System.out.printf("Valor final da compra: R$ %.2f\n", valorFinal);
 
 
         scanner.close();
