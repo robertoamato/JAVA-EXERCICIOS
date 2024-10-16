@@ -331,25 +331,60 @@ import java.util.Scanner;
 
 import java.util.Scanner;
 
+//public class Main {
+  //  public static void main(String[] args) {
+
+    //    Scanner scanner = new Scanner(System.in);
+
+
+      //  System.out.println("Digite um número inteiro: ");
+      //  int numero = scanner.nextInt();
+
+
+      //  if (numero % 2 == 0 && numero % 5 == 0) {
+      //      System.out.println("Número Par e Divisível por 5");
+      //  } else if (numero % 2 == 0) {
+      //      System.out.println("Número Par");
+      //  } else if (numero % 5 == 0) {
+      //      System.out.println("Número Divisível por 5");
+      //  } else {
+      //      System.out.println("O número não é par nem divisível por 5");
+      //  }
+
+
+      //  scanner.close();
+  //  }
+//}
+import java.util.Scanner;
+    //13. Desconto Progressivo
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("Digite um número inteiro: ");
-        int numero = scanner.nextInt();
+        System.out.println("Digite o valor da compra: ");
+        double valorCompra = scanner.nextDouble();
 
 
-        if (numero % 2 == 0 && numero % 5 == 0) {
-            System.out.println("Número Par e Divisível por 5");
-        } else if (numero % 2 == 0) {
-            System.out.println("Número Par");
-        } else if (numero % 5 == 0) {
-            System.out.println("Número Divisível por 5");
+        double desconto = 0;
+
+
+        if (valorCompra > 500) {
+            desconto = 0.20;  // 20% de desconto
+            System.out.println("Desconto aplicado: 20%");
+        } else if (valorCompra > 100) {
+            desconto = 0.10;  // 10% de desconto
+            System.out.println("Desconto aplicado: 10%");
         } else {
-            System.out.println("O número não é par nem divisível por 5");
+            System.out.println("Sem desconto aplicado.");
         }
+
+
+        double valorFinal = valorCompra - (valorCompra * desconto);
+
+
+        System.out.printf("Valor final da compra: R$ %.2f\n", valorFinal);
 
 
         scanner.close();
