@@ -4,5 +4,5 @@ public class Comida {
   public   String nomeDaComida="arroz";
   public   int pesoDaComida=1000;
   public   int idDaComida=1;
-
+  public   String nome  ="carne";
 }
